@@ -1,0 +1,304 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+    height: 100%;
+    overflow: auto;
+}
+/* header section */
+.header {
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding-left: 15px;
+}
+.text {
+    font-size: 20px;
+    font-weight: bold;
+}
+.header a{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.btnLogin {
+    background-color: red;
+    border-color: yellow;
+    color: yellow;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.btnLogin:hover {
+    color: red;
+    background-color: yellow;
+    border-color: red;
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+.nav a.active {
+    border-bottom: 3px solid red;
+}
+.nav a:hover {
+    border-bottom: 3px solid red;
+}
+.nav .icon {
+    display: none;
+  }
+.nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+}
+.btndrop {
+    color: black;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+.btndrop:hover {
+    border-bottom: 3px solid red;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: yellow;
+    min-width: 150px;
+    z-index: 999;
+    top: 60px;
+    left: 0;
+}
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+}
+.dropdown-content a:hover {
+    background-color: transparent;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* login section */
+.modal.fade .modal-dialog {
+    transform: scale(0.7);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal.fade.show .modal-dialog {
+    transform: scale(1);
+    opacity: 1;
+}
+.modal-content {
+    margin-top: 200px;
+    height: 355px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    left: 0;
+}
+
+.modal-header {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: black;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    align-items: center;
+}
+.modal-body .btnSignup {
+    font-size: 15px;
+    color: yellow;
+    background-color: transparent;
+    border: none;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+.btn-close {
+    border-radius: 50%;
+    padding: 5px;
+}
+.btnlogin {
+    background-color: red;
+    border-color: yellow;
+    color: yellow;
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.btnlogin:hover {
+    color: red;
+    background-color: yellow;
+    border-color: red;
+}
+.lform {
+    margin-top: 15px;
+    color: black;
+}
+
+/* signup section */
+.signup-modal-content {
+    margin-top: 100px;
+    height: 700px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    left: 0;
+}
+.signup-modal-content .modal-header{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: black;
+    font-weight: bold;
+}
+
+.signup-modal-content .btnsignup {
+    background-color: red;
+    border-color: yellow;
+    color: yellow;
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.signup-modal-content .btnsignup:hover {
+    color: red;
+    background-color: yellow;
+    border-color: red;
+}
+.sform {
+    margin-top: 10px;
+    color: black;
+}
+@media (max-width: 600px) {
+    .signup-modal-content {
+        width: 95vw;
+        height: auto;
+        margin-top: 5vh;
+    }
+
+    .signup-modal-content .btnsignup {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+/* home section */
+.home {
+    position: relative;
+}
+h1 {
+    color: red;
+    font-size: 200px;
+    font-weight: 700;
+    padding-top: 120px;
+    padding-left: 70px;
+    font-family: sans-serif;
+    letter-spacing: 6px;
+}
+h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 18%;
+    left: 130px;
+    transform-origin: bottom;
+    transform: rotateX(180deg);
+    line-height: 0.96em;
+    background: linear-gradient(0deg, red 0, transparent 40%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.5s;
+}
+.home-content {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    padding-left: 60px;
+}
+.home-content p {
+    font-size: 20px;
+    color: #FFFFC5;
+    padding-left: 90px;
+}
+.btnappoint {
+    background-color: yellow;
+    border-color: red;
+    color: red;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    margin-left: 90px;
+}
+.btnappoint:hover {
+    color: yellow;
+    background-color: red;
+    border-color: yellow;
+}
+.home-logo {
+    position: fixed;
+    top: 20%;
+    bottom: -110%;
+    transform: translateX(-50,  -50%);
+    left: 52%;
+    z-index: 2;
+}
+.home-logo img {
+    width: 650px;
+    height: 600px;
+}
+
+
+
+
